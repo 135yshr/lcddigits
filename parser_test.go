@@ -54,5 +54,10 @@ var _ = Describe("#Parser", func() {
 				Expect(Parse(1)).To(Equal([]byte(".....|..|")))
 			})
 		})
+		Context("数字の４が渡されたとき", func() {
+			It("LCDに表示する４が返ってくるべき", func() {
+				Expect(Parse(4)).To(Equal([]byte("...|_|..|")))
+			})
+		})
 	})
 })
