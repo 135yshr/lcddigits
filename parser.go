@@ -2,14 +2,14 @@ package lcddigits
 
 func Parse(n int) string {
 	switch n {
+	case 0:
+		return "._.\n|.|\n|_|"
 	case 5:
 		return "._.\n|_.\n._|"
-	}
-	if n == 0 {
-		return "._.\n|.|\n|_|"
-	}
-	if n == 6 {
+	case 6:
 		return "._.\n|_.\n|_|"
+	case 8:
+		return "._.\n|_|\n|_|"
 	}
-	return "._.\n|_|\n|_|"
+	return ""
 }
