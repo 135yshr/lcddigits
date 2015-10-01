@@ -10,6 +10,8 @@ func Parse(n int) string {
 		return "._.\n|_.\n|_|"
 	case 8:
 		return "._.\n|_|\n|_|"
+	case 9:
+		return "._.\n|_|\n..|"
 	}
 	return ""
 }
