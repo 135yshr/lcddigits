@@ -1,25 +1,25 @@
 package lcddigits
 
-func Parse(n int) string {
+func Parse(n int) (ret []byte) {
 	switch n {
 	case 0:
-		return "._.|.||_|"
+		ret = []byte("._.|.||_|")
 	case 1:
-		return ".....|..|"
+		ret = []byte(".....|..|")
 	case 2:
-		return "._.._||_."
+		ret = []byte("._.._||_.")
 	case 3:
-		return "._.._|._|"
+		ret = []byte("._.._|._|")
 	case 5:
-		return "._.|_.._|"
+		ret = []byte("._.|_.._|")
 	case 6:
-		return "._.|_.|_|"
+		ret = []byte("._.|_.|_|")
 	case 7:
-		return "._.|.|..|"
+		ret = []byte("._.|.|..|")
 	case 8:
-		return "._.|_||_|"
+		ret = []byte("._.|_||_|")
 	case 9:
-		return "._.|_|..|"
+		ret = []byte("._.|_|..|")
 	}
-	return ""
+	return
 }
