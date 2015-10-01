@@ -17,7 +17,7 @@ func Parse(n int) string {
 	case 7:
 		return "._.\n|.|\n..|"
 	case 8:
-		return "._.\n|_|\n|_|"
+		return "._.|_||_|"
 	case 9:
 		return "._.\n|_|\n..|"
 	}
