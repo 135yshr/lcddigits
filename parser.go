@@ -4,6 +4,8 @@ func Parse(n int) string {
 	switch n {
 	case 0:
 		return "._.\n|.|\n|_|"
+	case 3:
+		return "._.\n._|\n._|"
 	case 5:
 		return "._.\n|_.\n._|"
 	case 6:
