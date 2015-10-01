@@ -24,5 +24,10 @@ var _ = Describe("#Parser", func() {
 				Expect(Parse(6)).To(Equal("._.\n|_.\n|_|"))
 			})
 		})
+		Context("数字の５が渡されたとき", func() {
+			It("LCDに表示する５が返ってくるべき", func() {
+				Expect(Parse(5)).To(Equal("._.\n|_.\n._|"))
+			})
+		})
 	})
 })
