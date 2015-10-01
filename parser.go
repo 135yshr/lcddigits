@@ -15,6 +15,6 @@ var (
 	}
 )
 
-func Parse(n int) []byte {
-	return lcd_values[n]
+func Parse(n int) string {
+	return string(lcd_values[n])
 }
