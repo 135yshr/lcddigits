@@ -1,25 +1,39 @@
 package lcddigits
 
+var (
+	lcd_values = [][]byte{
+		[]byte("._.|.||_|"),
+		[]byte(".....|..|"),
+		[]byte("._.._||_."),
+		[]byte("._.._|._|"),
+		[]byte("._.|_.._|"),
+		[]byte("._.|_.|_|"),
+		[]byte("._.|.|..|"),
+		[]byte("._.|_||_|"),
+		[]byte("._.|_|..|"),
+	}
+)
+
 func Parse(n int) (ret []byte) {
 	switch n {
 	case 0:
-		ret = []byte("._.|.||_|")
+		ret = lcd_values[0]
 	case 1:
-		ret = []byte(".....|..|")
+		ret = lcd_values[1]
 	case 2:
-		ret = []byte("._.._||_.")
+		ret = lcd_values[2]
 	case 3:
-		ret = []byte("._.._|._|")
+		ret = lcd_values[3]
 	case 5:
-		ret = []byte("._.|_.._|")
+		ret = lcd_values[4]
 	case 6:
-		ret = []byte("._.|_.|_|")
+		ret = lcd_values[5]
 	case 7:
-		ret = []byte("._.|.|..|")
+		ret = lcd_values[6]
 	case 8:
-		ret = []byte("._.|_||_|")
+		ret = lcd_values[7]
 	case 9:
-		ret = []byte("._.|_|..|")
+		ret = lcd_values[8]
 	}
 	return
 }
